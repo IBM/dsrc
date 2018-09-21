@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="map__source_8h" local="no">map_source.h</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="22">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="24">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>map_source_impl.h</label>
+        <link refid="map__source__impl_8h"/>
+      </node>
+      <node id="25">
+        <label>map_source.h</label>
+        <link refid="map__source_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1a08d936454c61a15228be27ac39365b22" prot="public" static="no">
+        <name>ROS_INTERFACE_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface/api.h" line="30" column="12" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface/api.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface/api.h"/>
+  </compounddef>
+</doxygen>

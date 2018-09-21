@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/_ros_interface_swig_doc_tag.dir/_ros_interface_swig_doc_tag.cpp.o  -o _ros_interface_swig_doc_tag -rdynamic 

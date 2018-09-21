@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared  -o _ros_interface_swig.so CMakeFiles/_ros_interface_swig.dir/ros_interface_swigPYTHON_wrap.cxx.o -lpython2.7 ../lib/libgnuradio-ros_interface.so -lboost_filesystem -lboost_system -lgnuradio-runtime -lgnuradio-pmt -Wl,-rpath,/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/build/lib: 

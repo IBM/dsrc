@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_ROS_INTERFACE ros_interface)
+
+FIND_PATH(
+    ROS_INTERFACE_INCLUDE_DIRS
+    NAMES ros_interface/api.h
+    HINTS $ENV{ROS_INTERFACE_DIR}/include
+        ${PC_ROS_INTERFACE_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    ROS_INTERFACE_LIBRARIES
+    NAMES gnuradio-ros_interface
+    HINTS $ENV{ROS_INTERFACE_DIR}/lib
+        ${PC_ROS_INTERFACE_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(ROS_INTERFACE DEFAULT_MSG ROS_INTERFACE_LIBRARIES ROS_INTERFACE_INCLUDE_DIRS)
+MARK_AS_ADVANCED(ROS_INTERFACE_LIBRARIES ROS_INTERFACE_INCLUDE_DIRS)
+
