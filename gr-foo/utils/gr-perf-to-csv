@@ -20,7 +20,6 @@
 import sys, time
 
 from gnuradio import gr, ctrlport
-from subprocess import Popen, PIPE
 
 class MyApp(object):
     def __init__(self, args):
@@ -64,7 +63,7 @@ class MyApp(object):
         client.setKnobs(knobs)
 
         # let the flow graph run for some time
-        time.sleep(60)
+        time.sleep(30)
 
         ## get work time for all blocks
         kl = map(lambda x: "%s::total work time" % x, blocks)
@@ -75,8 +74,5 @@ class MyApp(object):
                     map(lambda x: x.value, wrk_knobs.values())))
 
         print(",".join(map(lambda x: str(x[1]), sorted(work_times.items()))))
-
-        p = Popen("uptime", stdout=PIPE, close_fds=True, shell=True)
-        print(p.stdout.read())
 
 MyApp(sys.argv)

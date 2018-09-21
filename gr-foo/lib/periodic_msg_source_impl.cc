@@ -54,6 +54,8 @@ periodic_msg_source_impl::~periodic_msg_source_impl() {
 void
 periodic_msg_source_impl::run(periodic_msg_source_impl *instance) {
 
+	try {
+
 	// flow graph startup delay
 	boost::this_thread::sleep(boost::posix_time::milliseconds(500));
 
@@ -65,7 +67,8 @@ periodic_msg_source_impl::run(periodic_msg_source_impl *instance) {
 				d_finished = true;
 				if(d_quit) {
 					boost::this_thread::sleep(boost::posix_time::milliseconds(500));
-					post(pmt::mp("system"), pmt::cons(pmt::mp("done"), pmt::PMT_T));
+					message_port_pub( pmt::mp("out"), pmt::PMT_EOF);
+					post(pmt::mp("system"), pmt::cons(pmt::mp("done"), pmt::from_long(1)));
 				}
 				break;
 			}
@@ -81,6 +84,17 @@ periodic_msg_source_impl::run(periodic_msg_source_impl *instance) {
 			delay = d_interval;
 		}
 		boost::this_thread::sleep(boost::posix_time::milliseconds(delay));
+	}
+
+	} catch(boost::thread_interrupted) {
+		gr::thread::scoped_lock(d_mutex);
+		dout << "PMS: thread interrupted" << std::endl;
+		d_finished = true;
+		if(d_quit) {
+			boost::this_thread::sleep(boost::posix_time::milliseconds(500));
+			message_port_pub( pmt::mp("out"), pmt::PMT_EOF);
+			post(pmt::mp("system"), pmt::cons(pmt::mp("done"), pmt::from_long(1)));
+		}
 	}
 }
 
