@@ -31,7 +31,4 @@ except ImportError:
 	pass
 
 # import any pure python here
-
-
-from ros_interface import ros_interface
 #

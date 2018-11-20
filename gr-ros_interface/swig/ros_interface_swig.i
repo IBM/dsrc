@@ -8,6 +8,9 @@
 %include "ros_interface_swig_doc.i"
 
 %{
+#include "ros_interface/ros_interface.h"
 %}
 
 
+%include "ros_interface/ros_interface.h"
+GR_SWIG_BLOCK_MAGIC2(ros_interface, ros_interface);

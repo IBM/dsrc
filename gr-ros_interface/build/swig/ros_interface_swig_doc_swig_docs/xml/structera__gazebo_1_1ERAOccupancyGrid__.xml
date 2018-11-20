@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structera__gazebo_1_1ERAOccupancyGrid__" kind="struct" language="C++" prot="public">
+    <compoundname>era_gazebo::ERAOccupancyGrid_</compoundname>
+    <includes refid="ERAOccupancyGrid_8h" local="no">ERAOccupancyGrid.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class ContainerAllocator</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1a318f87da233c7ef1e1363e92d126c290" prot="public" static="no">
+        <type><ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">ERAOccupancyGrid_</ref>&lt; ContainerAllocator &gt;</type>
+        <definition>typedef ERAOccupancyGrid_&lt;ContainerAllocator&gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="26" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" prot="public" static="no">
+        <type>::std_msgs::Header_&lt; ContainerAllocator &gt;</type>
+        <definition>typedef ::std_msgs::Header_&lt;ContainerAllocator&gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::_header_type</definition>
+        <argsstring></argsstring>
+        <name>_header_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="42" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" prot="public" static="no">
+        <type>::nav_msgs::MapMetaData_&lt; ContainerAllocator &gt;</type>
+        <definition>typedef ::nav_msgs::MapMetaData_&lt;ContainerAllocator&gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::_info_type</definition>
+        <argsstring></argsstring>
+        <name>_info_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="45" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" prot="public" static="no">
+        <type>std::vector&lt; int8_t, typename ContainerAllocator::template rebind&lt; int8_t &gt;::other &gt;</type>
+        <definition>typedef std::vector&lt;int8_t, typename ContainerAllocator::template rebind&lt;int8_t&gt;::other &gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::_data_type</definition>
+        <argsstring></argsstring>
+        <name>_data_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="48" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1a233746484f820b708759866a9d7ccb74" prot="public" static="no">
+        <type>boost::shared_ptr&lt; ::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt; ContainerAllocator &gt; &gt;</type>
+        <definition>typedef boost::shared_ptr&lt; ::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt; &gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::Ptr</definition>
+        <argsstring></argsstring>
+        <name>Ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="52" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structera__gazebo_1_1ERAOccupancyGrid___1ad5949324a6e31221f83732daab07b8f4" prot="public" static="no">
+        <type>boost::shared_ptr&lt; ::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt; ContainerAllocator &gt; const  &gt;</type>
+        <definition>typedef boost::shared_ptr&lt; ::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt; const&gt; era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::ConstPtr</definition>
+        <argsstring></argsstring>
+        <name>ConstPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="53" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" prot="public" static="no" mutable="no">
+        <type><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" kindref="member">_header_type</ref></type>
+        <definition>_header_type era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="43" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" prot="public" static="no" mutable="no">
+        <type><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" kindref="member">_info_type</ref></type>
+        <definition>_info_type era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="46" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" prot="public" static="no" mutable="no">
+        <type><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" kindref="member">_data_type</ref></type>
+        <definition>_data_type era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="49" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structera__gazebo_1_1ERAOccupancyGrid___1a05fdf32dc801c7bd817ee5963acd8af5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::ERAOccupancyGrid_</definition>
+        <argsstring>()</argsstring>
+        <name>ERAOccupancyGrid_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="28" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structera__gazebo_1_1ERAOccupancyGrid___1a8441b6f5f60143007a870929bc9c9dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;::ERAOccupancyGrid_</definition>
+        <argsstring>(const ContainerAllocator &amp;_alloc)</argsstring>
+        <name>ERAOccupancyGrid_</name>
+        <param>
+          <type>const ContainerAllocator &amp;</type>
+          <declname>_alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="33" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="33" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt;</label>
+        <link refid="structera__gazebo_1_1ERAOccupancyGrid__"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; int8_t, typename ContainerAllocator::template rebind&lt; int8_t &gt;::other &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" line="25" column="1" bodyfile="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h" bodystart="24" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>_data_type</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>_header_type</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>_info_type</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1ad5949324a6e31221f83732daab07b8f4" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>ConstPtr</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>data</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a05fdf32dc801c7bd817ee5963acd8af5" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>ERAOccupancyGrid_</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a8441b6f5f60143007a870929bc9c9dfd" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>ERAOccupancyGrid_</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>header</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>info</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a233746484f820b708759866a9d7ccb74" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>Ptr</name></member>
+      <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a318f87da233c7ef1e1363e92d126c290" prot="public" virt="non-virtual"><scope>era_gazebo::ERAOccupancyGrid_</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

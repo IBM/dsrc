@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5ecec5863d13c0214ac3f85e50b34563" kind="dir">
+    <compoundname>/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="ros__interface_8h">ros_interface.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface/"/>
+  </compounddef>
+</doxygen>

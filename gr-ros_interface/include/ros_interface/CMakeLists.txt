@@ -22,5 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/ros_interface
+    ros_interface.h DESTINATION include/ros_interface
 )

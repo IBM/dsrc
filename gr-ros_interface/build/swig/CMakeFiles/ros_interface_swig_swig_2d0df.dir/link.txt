@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/ros_interface_swig_swig_2d0df.dir/ros_interface_swig_swig_2d0df.cpp.o  -o ros_interface_swig_swig_2d0df  -L/opt/ros/kinetic/lib -rdynamic 

@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ERAOccupancyGrid_8h" kind="file" language="C++">
+    <compoundname>ERAOccupancyGrid.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includes local="no">ros/types.h</includes>
+    <includes local="no">ros/serialization.h</includes>
+    <includes local="no">ros/builtin_message_traits.h</includes>
+    <includes local="no">ros/message_operations.h</includes>
+    <includes local="no">std_msgs/Header.h</includes>
+    <includes local="no">nav_msgs/MapMetaData.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>ros/message_operations.h</label>
+      </node>
+      <node id="0">
+        <label>/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h</label>
+        <link refid="ERAOccupancyGrid.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ros/builtin_message_traits.h</label>
+      </node>
+      <node id="5">
+        <label>ros/serialization.h</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/Header.h</label>
+      </node>
+      <node id="1">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>ros/types.h</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>nav_msgs/MapMetaData.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structera__gazebo_1_1ERAOccupancyGrid__" prot="public">era_gazebo::ERAOccupancyGrid_</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::IsFixedSize&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01Contaidb974dcc6064b6656097a4cb19298ec2" prot="public">ros::message_traits::IsFixedSize&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::IsMessage&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" prot="public">ros::message_traits::IsMessage&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::HasHeader&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" prot="public">ros::message_traits::HasHeader&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::MD5Sum&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::DataType&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_traits::Definition&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::serialization::Serializer&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innerclass refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" prot="public">ros::message_operations::Printer&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</innerclass>
+    <innernamespace refid="namespaceera__gazebo">era_gazebo</innernamespace>
+    <innernamespace refid="namespaceros">ros</innernamespace>
+    <innernamespace refid="namespaceros_1_1message__traits">ros::message_traits</innernamespace>
+    <innernamespace refid="namespaceros_1_1serialization">ros::serialization</innernamespace>
+    <innernamespace refid="namespaceros_1_1message__operations">ros::message_operations</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Generated<sp/>by<sp/>gencpp<sp/>from<sp/>file<sp/>era_gazebo/ERAOccupancyGrid.msg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DO<sp/>NOT<sp/>EDIT!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ERA_GAZEBO_MESSAGE_ERAOCCUPANCYGRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERA_GAZEBO_MESSAGE_ERAOCCUPANCYGRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/serialization.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/builtin_message_traits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/message_operations.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/Header.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/MapMetaData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespaceera__gazebo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceera__gazebo" kindref="compound">era_gazebo</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="24" refid="structera__gazebo_1_1ERAOccupancyGrid__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">ERAOccupancyGrid_</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="structera__gazebo_1_1ERAOccupancyGrid___1a318f87da233c7ef1e1363e92d126c290" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">ERAOccupancyGrid_&lt;ContainerAllocator&gt;</ref><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a318f87da233c7ef1e1363e92d126c290" kindref="member">Type</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structera__gazebo_1_1ERAOccupancyGrid___1a05fdf32dc801c7bd817ee5963acd8af5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a05fdf32dc801c7bd817ee5963acd8af5" kindref="member">ERAOccupancyGrid_</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" kindref="member">header</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" kindref="member">info</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" kindref="member">data</ref>()<sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="structera__gazebo_1_1ERAOccupancyGrid___1a8441b6f5f60143007a870929bc9c9dfd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a8441b6f5f60143007a870929bc9c9dfd" kindref="member">ERAOccupancyGrid_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ContainerAllocator&amp;<sp/>_alloc)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" kindref="member">header</ref>(_alloc)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" kindref="member">info</ref>(_alloc)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" kindref="member">data</ref>(_alloc)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>(void)_alloc;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" refkind="member"><highlight class="normal"><sp/><sp/><sp/>typedef<sp/><sp/>::std_msgs::Header_&lt;ContainerAllocator&gt;<sp/><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" kindref="member">_header_type</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" refkind="member"><highlight class="normal"><sp/><sp/>_header_type<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" kindref="member">header</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" refkind="member"><highlight class="normal"><sp/><sp/><sp/>typedef<sp/><sp/>::nav_msgs::MapMetaData_&lt;ContainerAllocator&gt;<sp/><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" kindref="member">_info_type</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" refkind="member"><highlight class="normal"><sp/><sp/>_info_type<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;int8_t,<sp/>typename<sp/>ContainerAllocator::template<sp/>rebind&lt;int8_t&gt;::other<sp/>&gt;<sp/><sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" kindref="member">_data_type</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" refkind="member"><highlight class="normal"><sp/><sp/>_data_type<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structera__gazebo_1_1ERAOccupancyGrid___1a233746484f820b708759866a9d7ccb74" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;<sp/>&gt;<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1a233746484f820b708759866a9d7ccb74" kindref="member">Ptr</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structera__gazebo_1_1ERAOccupancyGrid___1ad5949324a6e31221f83732daab07b8f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;<sp/><ref refid="structera__gazebo_1_1ERAOccupancyGrid___1ad5949324a6e31221f83732daab07b8f4" kindref="member">ConstPtr</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>struct<sp/>ERAOccupancyGrid_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespaceera__gazebo_1ab146f2c5c445d406483e46d6fd9ebd1c" refkind="member"><highlight class="normal">typedef<sp/>::era_gazebo::ERAOccupancyGrid_&lt;std::allocator&lt;void&gt;<sp/>&gt;<sp/><ref refid="namespaceera__gazebo_1ab146f2c5c445d406483e46d6fd9ebd1c" kindref="member">ERAOccupancyGrid</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="namespaceera__gazebo_1ab8d11d06163d890232cf9b996dfe425b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;<sp/>::era_gazebo::ERAOccupancyGrid<sp/>&gt;<sp/><ref refid="namespaceera__gazebo_1ab8d11d06163d890232cf9b996dfe425b" kindref="member">ERAOccupancyGridPtr</ref>;</highlight></codeline>
+<codeline lineno="60" refid="namespaceera__gazebo_1a259d88a01d83e51e22c6b1e4faa4bd20" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;<sp/>::era_gazebo::ERAOccupancyGrid<sp/>const&gt;<sp/><ref refid="namespaceera__gazebo_1a259d88a01d83e51e22c6b1e4faa4bd20" kindref="member">ERAOccupancyGridConstPtr</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constants<sp/>requiring<sp/>out<sp/>of<sp/>line<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="67" refid="namespaceera__gazebo_1a8b56ed735dc317076f61cf70fa280c43" refkind="member"><highlight class="normal">std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>s,<sp/>const<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;<sp/>&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">ros::message_operations::Printer&lt;<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;<sp/>&gt;::stream(s,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>v);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>era_gazebo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="namespaceros" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceros" kindref="compound">ros</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77" refid="namespaceros_1_1message__traits" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">message_traits</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BOOLTRAITS<sp/>{&apos;IsFixedSize&apos;:<sp/>False,<sp/>&apos;IsMessage&apos;:<sp/>True,<sp/>&apos;HasHeader&apos;:<sp/>True}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{&apos;nav_msgs&apos;:<sp/>[&apos;/opt/ros/kinetic/share/nav_msgs/cmake/../msg&apos;],<sp/>&apos;std_msgs&apos;:<sp/>[&apos;/opt/ros/kinetic/share/std_msgs/cmake/../msg&apos;],<sp/>&apos;actionlib_msgs&apos;:<sp/>[&apos;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg&apos;],<sp/>&apos;geometry_msgs&apos;:<sp/>[&apos;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg&apos;],<sp/>&apos;era_gazebo&apos;:<sp/>[&apos;/home/augustojv/catkin_ws/src/era_gazebo/msg&apos;]}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!!!!!!!!!!<sp/>[&apos;__class__&apos;,<sp/>&apos;__delattr__&apos;,<sp/>&apos;__dict__&apos;,<sp/>&apos;__doc__&apos;,<sp/>&apos;__eq__&apos;,<sp/>&apos;__format__&apos;,<sp/>&apos;__getattribute__&apos;,<sp/>&apos;__hash__&apos;,<sp/>&apos;__init__&apos;,<sp/>&apos;__module__&apos;,<sp/>&apos;__ne__&apos;,<sp/>&apos;__new__&apos;,<sp/>&apos;__reduce__&apos;,<sp/>&apos;__reduce_ex__&apos;,<sp/>&apos;__repr__&apos;,<sp/>&apos;__setattr__&apos;,<sp/>&apos;__sizeof__&apos;,<sp/>&apos;__str__&apos;,<sp/>&apos;__subclasshook__&apos;,<sp/>&apos;__weakref__&apos;,<sp/>&apos;_parsed_fields&apos;,<sp/>&apos;constants&apos;,<sp/>&apos;fields&apos;,<sp/>&apos;full_name&apos;,<sp/>&apos;has_header&apos;,<sp/>&apos;header_present&apos;,<sp/>&apos;names&apos;,<sp/>&apos;package&apos;,<sp/>&apos;parsed_fields&apos;,<sp/>&apos;short_name&apos;,<sp/>&apos;text&apos;,<sp/>&apos;types&apos;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="91" refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IsFixedSize&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>:<sp/>FalseType</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="96" refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01Contaidb974dcc6064b6656097a4cb19298ec2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IsFixedSize&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>const&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>:<sp/>FalseType</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="101" refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IsMessage&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>:<sp/>TrueType</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="106" refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IsMessage&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>const&gt;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>:<sp/>TrueType</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="111" refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HasHeader&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>:<sp/>TrueType</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="116" refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HasHeader&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>const&gt;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>:<sp/>TrueType</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="122" refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MD5Sum&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124" refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ab77a2df9e20588d1475de7d5e605c1d3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ab77a2df9e20588d1475de7d5e605c1d3" kindref="member">value</ref>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;3381f2d731d4076ec5c71b0759edbe4e&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aea626b803fc010c63d257bf93f216500" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aea626b803fc010c63d257bf93f216500" kindref="member">value</ref>(const<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;&amp;)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aea626b803fc010c63d257bf93f216500" kindref="member">value</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="130" refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a1033d528d3f7efb6f6a747d6b250f443" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint64_t<sp/>static_value1<sp/>=<sp/>0x3381f2d731d4076eULL;</highlight></codeline>
+<codeline lineno="131" refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1abe4586260d982ae57019d46e834ebd95" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint64_t<sp/>static_value2<sp/>=<sp/>0xc5c71b0759edbe4eULL;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="135" refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">DataType&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137" refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ade46d14d761fe5dfa25ff00db350892b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ade46d14d761fe5dfa25ff00db350892b" kindref="member">value</ref>()</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;era_gazebo/ERAOccupancyGrid&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a15aa0df2202b6f37f30828aa008f8037" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a15aa0df2202b6f37f30828aa008f8037" kindref="member">value</ref>(const<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;&amp;)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a15aa0df2202b6f37f30828aa008f8037" kindref="member">value</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="146" refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Definition&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148" refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a5e5430c8d3f72b8b8bc962c95788075a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a5e5430c8d3f72b8b8bc962c95788075a" kindref="member">value</ref>()</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;#<sp/>This<sp/>represents<sp/>a<sp/>custom<sp/>OccupancyGrid<sp/>message<sp/>for<sp/>map<sp/>exchanging<sp/>in<sp/>ERA.\n\</highlight></codeline>
+<codeline lineno="151"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="152"><highlight class="stringliteral">Header<sp/>header<sp/>\n\</highlight></codeline>
+<codeline lineno="153"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="154"><highlight class="stringliteral">#MetaData<sp/>for<sp/>the<sp/>map\n\</highlight></codeline>
+<codeline lineno="155"><highlight class="stringliteral">nav_msgs/MapMetaData<sp/>info\n\</highlight></codeline>
+<codeline lineno="156"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="157"><highlight class="stringliteral">#<sp/>The<sp/>map<sp/>data,<sp/>in<sp/>row-major<sp/>order,<sp/>starting<sp/>with<sp/>(0,0).<sp/><sp/>Occupancy\n\</highlight></codeline>
+<codeline lineno="158"><highlight class="stringliteral">#<sp/>probabilities<sp/>are<sp/>in<sp/>the<sp/>range<sp/>[0,100].<sp/><sp/>Unknown<sp/>is<sp/>-1.\n\</highlight></codeline>
+<codeline lineno="159"><highlight class="stringliteral">int8[]<sp/>data\n\</highlight></codeline>
+<codeline lineno="160"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="161"><highlight class="stringliteral">================================================================================\n\</highlight></codeline>
+<codeline lineno="162"><highlight class="stringliteral">MSG:<sp/>std_msgs/Header\n\</highlight></codeline>
+<codeline lineno="163"><highlight class="stringliteral">#<sp/>Standard<sp/>metadata<sp/>for<sp/>higher-level<sp/>stamped<sp/>data<sp/>types.\n\</highlight></codeline>
+<codeline lineno="164"><highlight class="stringliteral">#<sp/>This<sp/>is<sp/>generally<sp/>used<sp/>to<sp/>communicate<sp/>timestamped<sp/>data<sp/>\n\</highlight></codeline>
+<codeline lineno="165"><highlight class="stringliteral">#<sp/>in<sp/>a<sp/>particular<sp/>coordinate<sp/>frame.\n\</highlight></codeline>
+<codeline lineno="166"><highlight class="stringliteral">#<sp/>\n\</highlight></codeline>
+<codeline lineno="167"><highlight class="stringliteral">#<sp/>sequence<sp/>ID:<sp/>consecutively<sp/>increasing<sp/>ID<sp/>\n\</highlight></codeline>
+<codeline lineno="168"><highlight class="stringliteral">uint32<sp/>seq\n\</highlight></codeline>
+<codeline lineno="169"><highlight class="stringliteral">#Two-integer<sp/>timestamp<sp/>that<sp/>is<sp/>expressed<sp/>as:\n\</highlight></codeline>
+<codeline lineno="170"><highlight class="stringliteral">#<sp/>*<sp/>stamp.sec:<sp/>seconds<sp/>(stamp_secs)<sp/>since<sp/>epoch<sp/>(in<sp/>Python<sp/>the<sp/>variable<sp/>is<sp/>called<sp/>&apos;secs&apos;)\n\</highlight></codeline>
+<codeline lineno="171"><highlight class="stringliteral">#<sp/>*<sp/>stamp.nsec:<sp/>nanoseconds<sp/>since<sp/>stamp_secs<sp/>(in<sp/>Python<sp/>the<sp/>variable<sp/>is<sp/>called<sp/>&apos;nsecs&apos;)\n\</highlight></codeline>
+<codeline lineno="172"><highlight class="stringliteral">#<sp/>time-handling<sp/>sugar<sp/>is<sp/>provided<sp/>by<sp/>the<sp/>client<sp/>library\n\</highlight></codeline>
+<codeline lineno="173"><highlight class="stringliteral">time<sp/>stamp\n\</highlight></codeline>
+<codeline lineno="174"><highlight class="stringliteral">#Frame<sp/>this<sp/>data<sp/>is<sp/>associated<sp/>with\n\</highlight></codeline>
+<codeline lineno="175"><highlight class="stringliteral">#<sp/>0:<sp/>no<sp/>frame\n\</highlight></codeline>
+<codeline lineno="176"><highlight class="stringliteral">#<sp/>1:<sp/>global<sp/>frame\n\</highlight></codeline>
+<codeline lineno="177"><highlight class="stringliteral">string<sp/>frame_id\n\</highlight></codeline>
+<codeline lineno="178"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="179"><highlight class="stringliteral">================================================================================\n\</highlight></codeline>
+<codeline lineno="180"><highlight class="stringliteral">MSG:<sp/>nav_msgs/MapMetaData\n\</highlight></codeline>
+<codeline lineno="181"><highlight class="stringliteral">#<sp/>This<sp/>hold<sp/>basic<sp/>information<sp/>about<sp/>the<sp/>characterists<sp/>of<sp/>the<sp/>OccupancyGrid\n\</highlight></codeline>
+<codeline lineno="182"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="183"><highlight class="stringliteral">#<sp/>The<sp/>time<sp/>at<sp/>which<sp/>the<sp/>map<sp/>was<sp/>loaded\n\</highlight></codeline>
+<codeline lineno="184"><highlight class="stringliteral">time<sp/>map_load_time\n\</highlight></codeline>
+<codeline lineno="185"><highlight class="stringliteral">#<sp/>The<sp/>map<sp/>resolution<sp/>[m/cell]\n\</highlight></codeline>
+<codeline lineno="186"><highlight class="stringliteral">float32<sp/>resolution\n\</highlight></codeline>
+<codeline lineno="187"><highlight class="stringliteral">#<sp/>Map<sp/>width<sp/>[cells]\n\</highlight></codeline>
+<codeline lineno="188"><highlight class="stringliteral">uint32<sp/>width\n\</highlight></codeline>
+<codeline lineno="189"><highlight class="stringliteral">#<sp/>Map<sp/>height<sp/>[cells]\n\</highlight></codeline>
+<codeline lineno="190"><highlight class="stringliteral">uint32<sp/>height\n\</highlight></codeline>
+<codeline lineno="191"><highlight class="stringliteral">#<sp/>The<sp/>origin<sp/>of<sp/>the<sp/>map<sp/>[m,<sp/>m,<sp/>rad].<sp/><sp/>This<sp/>is<sp/>the<sp/>real-world<sp/>pose<sp/>of<sp/>the\n\</highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral">#<sp/>cell<sp/>(0,0)<sp/>in<sp/>the<sp/>map.\n\</highlight></codeline>
+<codeline lineno="193"><highlight class="stringliteral">geometry_msgs/Pose<sp/>origin\n\</highlight></codeline>
+<codeline lineno="194"><highlight class="stringliteral">================================================================================\n\</highlight></codeline>
+<codeline lineno="195"><highlight class="stringliteral">MSG:<sp/>geometry_msgs/Pose\n\</highlight></codeline>
+<codeline lineno="196"><highlight class="stringliteral">#<sp/>A<sp/>representation<sp/>of<sp/>pose<sp/>in<sp/>free<sp/>space,<sp/>composed<sp/>of<sp/>position<sp/>and<sp/>orientation.<sp/>\n\</highlight></codeline>
+<codeline lineno="197"><highlight class="stringliteral">Point<sp/>position\n\</highlight></codeline>
+<codeline lineno="198"><highlight class="stringliteral">Quaternion<sp/>orientation\n\</highlight></codeline>
+<codeline lineno="199"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="200"><highlight class="stringliteral">================================================================================\n\</highlight></codeline>
+<codeline lineno="201"><highlight class="stringliteral">MSG:<sp/>geometry_msgs/Point\n\</highlight></codeline>
+<codeline lineno="202"><highlight class="stringliteral">#<sp/>This<sp/>contains<sp/>the<sp/>position<sp/>of<sp/>a<sp/>point<sp/>in<sp/>free<sp/>space\n\</highlight></codeline>
+<codeline lineno="203"><highlight class="stringliteral">float64<sp/>x\n\</highlight></codeline>
+<codeline lineno="204"><highlight class="stringliteral">float64<sp/>y\n\</highlight></codeline>
+<codeline lineno="205"><highlight class="stringliteral">float64<sp/>z\n\</highlight></codeline>
+<codeline lineno="206"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="207"><highlight class="stringliteral">================================================================================\n\</highlight></codeline>
+<codeline lineno="208"><highlight class="stringliteral">MSG:<sp/>geometry_msgs/Quaternion\n\</highlight></codeline>
+<codeline lineno="209"><highlight class="stringliteral">#<sp/>This<sp/>represents<sp/>an<sp/>orientation<sp/>in<sp/>free<sp/>space<sp/>in<sp/>quaternion<sp/>form.\n\</highlight></codeline>
+<codeline lineno="210"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="211"><highlight class="stringliteral">float64<sp/>x\n\</highlight></codeline>
+<codeline lineno="212"><highlight class="stringliteral">float64<sp/>y\n\</highlight></codeline>
+<codeline lineno="213"><highlight class="stringliteral">float64<sp/>z\n\</highlight></codeline>
+<codeline lineno="214"><highlight class="stringliteral">float64<sp/>w\n\</highlight></codeline>
+<codeline lineno="215"><highlight class="stringliteral">&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a7b2798400785b3206812073267f7cc8d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a7b2798400785b3206812073267f7cc8d" kindref="member">value</ref>(const<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;&amp;)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a7b2798400785b3206812073267f7cc8d" kindref="member">value</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>message_traits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceros" kindref="compound">ros</ref></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226" refid="namespaceros_1_1serialization" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">serialization</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Serializer&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231" refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a694db5f5d0ef7a6bd5e189608f678ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Stream,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a694db5f5d0ef7a6bd5e189608f678ddd" kindref="member">allInOne</ref>(Stream&amp;<sp/>stream,<sp/>T<sp/>m)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stream.next(m.header);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stream.next(m.info);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stream.next(m.data);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_DECLARE_ALLINONE_SERIALIZER</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>};<sp/></highlight><highlight class="comment">//<sp/>struct<sp/>ERAOccupancyGrid_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceros" kindref="compound">ros</ref></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246" refid="namespaceros_1_1message__operations" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">message_operations</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ContainerAllocator&gt;</highlight></codeline>
+<codeline lineno="250" refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Printer&lt;<sp/>::<ref refid="structera__gazebo_1_1ERAOccupancyGrid__" kindref="compound">era_gazebo::ERAOccupancyGrid_</ref>&lt;ContainerAllocator&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252" refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aa4bbc608ce0ae4c28a730d1cc3446b1b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Stream&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aa4bbc608ce0ae4c28a730d1cc3446b1b" kindref="member">stream</ref>(Stream&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>indent,<sp/>const<sp/>::era_gazebo::ERAOccupancyGrid_&lt;ContainerAllocator&gt;&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>indent<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;header:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>Printer&lt;<sp/>::std_msgs::Header_&lt;ContainerAllocator&gt;<sp/>&gt;::stream(s,<sp/>indent<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>v.header);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>indent<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;info:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>Printer&lt;<sp/>::nav_msgs::MapMetaData_&lt;ContainerAllocator&gt;<sp/>&gt;::stream(s,<sp/>indent<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>v.info);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>indent<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;data[]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>v.data.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>&lt;&lt;<sp/>indent<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>data[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Printer&lt;int8_t&gt;::stream(s,<sp/>indent<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>v.data[i]);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>message_operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ERA_GAZEBO_MESSAGE_ERAOCCUPANCYGRID_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ERAOccupancyGrid.h"/>
+  </compounddef>
+</doxygen>

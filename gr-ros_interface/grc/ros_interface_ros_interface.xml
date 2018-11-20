@@ -4,29 +4,8 @@
   <key>ros_interface_ros_interface</key>
   <category>ROS Interface</category>
   <import>import ros_interface</import>
-  <make>ros_interface.ros_interface($ros_namespace, $compress_topic)</make>
+  <make>ros_interface.ros_interface()</make>
 
-  <param>
-    <name>ROS Namespace</name>
-    <key>ros_namespace</key>
-    <type>string</type>
-  </param>
-
-  <param>
-    <name>Compress ROS Topic</name>
-    <key>compress_topic</key>
-    <value>False</value>
-    <type>enum</type>
-    <option>
-      <name>Yes</name>
-      <key>True</key>
-    </option>
-    <option>
-      <name>No</name>
-      <key>False</key>
-    </option>
-  </param>
-  
   <sink>
     <name>pdus</name>
     <type>message</type>
@@ -36,4 +15,5 @@
     <name>pdus</name>
     <type>message</type>
   </source>
+
 </block>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ros__interface_8h" kind="file" language="C++">
+    <compoundname>ros_interface.h</compoundname>
+    <includes refid="api_8h" local="no">ros_interface/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="ros__interface__impl_8h" local="no">ros_interface_impl.h</includedby>
+    <incdepgraph>
+      <node id="68">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="67">
+        <label>ros_interface/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="66">
+        <label>ros_interface.h</label>
+        <link refid="ros_interface.h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="71">
+        <label>ros_interface_impl.h</label>
+        <link refid="ros__interface__impl_8h"/>
+      </node>
+      <node id="70">
+        <label>ros_interface.h</label>
+        <link refid="ros_interface.h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1ros__interface_1_1ros__interface" prot="public">gr::ros_interface::ros_interface</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1ros__interface">gr::ros_interface</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/include/ros_interface/ros_interface.h"/>
+  </compounddef>
+</doxygen>

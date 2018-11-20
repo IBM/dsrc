@@ -1231,10 +1231,6 @@
       <value></value>
     </param>
     <param>
-      <key>compress_topic</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>affinity</key>
       <value></value>
     </param>
@@ -1244,7 +1240,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(616, 277)</value>
+      <value>(656, 272)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1261,10 +1257,6 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>ros_namespace</key>
-      <value>ros_namespace</value>
     </param>
   </block>
   <block>

@@ -24,6 +24,20 @@ cmake_minimum_required(VERSION 2.6)
 project(gr-ros_interface CXX C)
 enable_testing()
 
+# Added by Augusto Vega #############
+macro(use_cxx11)
+  if (CMAKE_VERSION VERSION_LESS "3.1")
+    if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+      set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+    endif ()
+  else ()
+    set (CMAKE_CXX_STANDARD 11)
+  endif ()
+endmacro(use_cxx11)
+
+use_cxx11()
+#####################################
+
 #select the release build type by default to get optimization flags
 if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE "Release")
@@ -33,9 +47,6 @@ set(CMAKE_BUILD_TYPE ${CMAKE_BUILD_TYPE} CACHE STRING "")
 
 #make sure our local CMake Modules path comes first
 list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
-
-#find_package(catkin REQUIRED COMPONENTS roscpp)
-find_package(roscpp)
 
 ########################################################################
 # Compiler specific setup
@@ -108,6 +119,8 @@ endif(APPLE)
 ########################################################################
 find_package(CppUnit)
 find_package(Doxygen)
+find_package(roscpp REQUIRED)
+find_package(LZ4 REQUIRED)
 
 # Search for GNU Radio and its components and versions. Add any
 # components required to the list of GR_REQUIRED_COMPONENTS (in all
@@ -118,6 +131,10 @@ find_package(Gnuradio "3.7.2" REQUIRED)
 
 if(NOT CPPUNIT_FOUND)
     message(FATAL_ERROR "CppUnit required to compile ros_interface")
+endif()
+
+if(NOT roscpp_FOUND)
+  message(FATAL_ERROR "roscpp required to compile ros_interface")
 endif()
 
 ########################################################################
@@ -141,12 +158,14 @@ include_directories(
     ${CPPUNIT_INCLUDE_DIRS}
     ${GNURADIO_ALL_INCLUDE_DIRS}
     ${roscpp_INCLUDE_DIRS}
+    ${LZ4_INCLUDE_DIR}
 )
 
 link_directories(
     ${Boost_LIBRARY_DIRS}
     ${CPPUNIT_LIBRARY_DIRS}
     ${GNURADIO_RUNTIME_LIBRARY_DIRS}
+    ${roscpp_LIBRARY_DIRS}
 )
 
 # Set component parameters
@@ -169,8 +188,9 @@ add_custom_target(uninstall
 # Add subdirectories
 ########################################################################
 add_subdirectory(include/ros_interface)
+add_subdirectory(lib)
 add_subdirectory(swig)
-add_subdirectory(python)
+#add_subdirectory(python)
 add_subdirectory(grc)
 add_subdirectory(apps)
 add_subdirectory(docs)

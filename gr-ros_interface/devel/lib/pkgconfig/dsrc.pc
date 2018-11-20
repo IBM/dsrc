@@ -1,8 +1,0 @@
-prefix=/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/devel
-
-Name: dsrc
-Description: Description of dsrc
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/augustojv/catkin_ws/src/dsrc/gr-ros_interface/devel/lib 
-Requires: 

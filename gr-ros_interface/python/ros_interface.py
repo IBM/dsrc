@@ -25,7 +25,8 @@ import pickle
 import bz2
 import sys
 from gnuradio import gr
-from nav_msgs.msg import OccupancyGrid
+#from nav_msgs.msg import OccupancyGrid
+from era_gazebo.msg import ERAOccupancyGrid
 
 class ros_interface(gr.basic_block):
     """
@@ -41,21 +42,17 @@ class ros_interface(gr.basic_block):
         
         self.sent_msgs = 0
         self.received_msgs = 0
-        
-        if (not self.ros_namespace):
-            self.subscribed_ros_topic = "map"
-            self.published_ros_topic  = "remote_map"
-        else:
-            self.subscribed_ros_topic = '/{}/map'.format(self.ros_namespace)
-            self.published_ros_topic  = '/{}/remote_map'.format(self.ros_namespace)
+
+        self.subscribed_ros_topic = "local_map" 
+        self.published_ros_topic = "remote_map"
         
         # Create input and output message ports
         self.message_port_register_in(pmt.intern("pdus"))
         self.message_port_register_out(pmt.intern("pdus"))
         self.set_msg_handler(pmt.intern('pdus'), self.handle_msg)
         rospy.init_node('ros_interface')
-        rospy.Subscriber(self.subscribed_ros_topic, OccupancyGrid, self.handle_ros_topic)
-        self.pub = rospy.Publisher(self.published_ros_topic, OccupancyGrid, queue_size=10)
+        rospy.Subscriber(self.subscribed_ros_topic, ERAOccupancyGrid, self.handle_ros_topic)
+        self.pub = rospy.Publisher(self.published_ros_topic, ERAOccupancyGrid, queue_size=10)
 
     def general_work(self, input_items, output_items):
         rospy.spin()

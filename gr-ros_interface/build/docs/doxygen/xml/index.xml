@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::DataType&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+    <member refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ade46d14d761fe5dfa25ff00db350892b" kind="function"><name>value</name></member>
+    <member refid="structros_1_1message__traits_1_1DataType_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a15aa0df2202b6f37f30828aa008f8037" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::Definition&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+    <member refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a5e5430c8d3f72b8b8bc962c95788075a" kind="function"><name>value</name></member>
+    <member refid="structros_1_1message__traits_1_1Definition_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a7b2798400785b3206812073267f7cc8d" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="structera__gazebo_1_1ERAOccupancyGrid__" kind="struct"><name>era_gazebo::ERAOccupancyGrid_</name>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a318f87da233c7ef1e1363e92d126c290" kind="typedef"><name>Type</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a8d568d0623e55dbb6705f967f599411c" kind="typedef"><name>_header_type</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a876a63cc1cc7fe83dd9379acf9dc216b" kind="typedef"><name>_info_type</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1ad74123ea99c3451e5e22d330f8b25598" kind="typedef"><name>_data_type</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a233746484f820b708759866a9d7ccb74" kind="typedef"><name>Ptr</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1ad5949324a6e31221f83732daab07b8f4" kind="typedef"><name>ConstPtr</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1abe88efb98c19be0af3c2a6ae1b740ea5" kind="variable"><name>header</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1aae877291461673f3ccee3213bec5dcfe" kind="variable"><name>info</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1acfb2089617cbc4f62e6585a91d176a86" kind="variable"><name>data</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a05fdf32dc801c7bd817ee5963acd8af5" kind="function"><name>ERAOccupancyGrid_</name></member>
+    <member refid="structera__gazebo_1_1ERAOccupancyGrid___1a8441b6f5f60143007a870929bc9c9dfd" kind="function"><name>ERAOccupancyGrid_</name></member>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::HasHeader&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1HasHeader_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" kind="struct"><name>ros::message_traits::HasHeader&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::IsFixedSize&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1IsFixedSize_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01Contaidb974dcc6064b6656097a4cb19298ec2" kind="struct"><name>ros::message_traits::IsFixedSize&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::IsMessage&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1IsMessage_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01const_01_01_4" kind="struct"><name>ros::message_traits::IsMessage&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; const  &gt;</name>
+  </compound>
+  <compound refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_traits::MD5Sum&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+    <member refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a1033d528d3f7efb6f6a747d6b250f443" kind="variable"><name>static_value1</name></member>
+    <member refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1abe4586260d982ae57019d46e834ebd95" kind="variable"><name>static_value2</name></member>
+    <member refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1ab77a2df9e20588d1475de7d5e605c1d3" kind="function"><name>value</name></member>
+    <member refid="structros_1_1message__traits_1_1MD5Sum_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aea626b803fc010c63d257bf93f216500" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::message_operations::Printer&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+    <member refid="structros_1_1message__operations_1_1Printer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1aa4bbc608ce0ae4c28a730d1cc3446b1b" kind="function"><name>stream</name></member>
+  </compound>
+  <compound refid="classgr_1_1ros__interface_1_1ros__interface" kind="class"><name>gr::ros_interface::ros_interface</name>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface_1a0fd02c5e85a18200c103cc84bb8a7d7c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface_1ad4fc7e3d674606615a4d79479af4f916" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1ros__interface_1_1ros__interface__impl" kind="class"><name>gr::ros_interface::ros_interface_impl</name>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a56cc2ee92d32ea6f94511a3f640868fb" kind="variable"><name>_sent_msgs</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a9f01327e6cbb6daaad824ecd3be939e8" kind="variable"><name>_received_msgs</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1ad9387b0f2dc60cebbe942da9a6b21d2a" kind="variable"><name>_n</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a87dbfa6b8c7aa55169330c01853ed39c" kind="variable"><name>_loc_map_sub</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1adab8ee23055fe8bf88af998ce817b323" kind="variable"><name>_rem_map_pub</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a340f9f0ba49f5d536f596470cf1b23a1" kind="variable"><name>_spinner</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a2babe7cb7a7ef05232952cf41013fe78" kind="function"><name>ros_interface_impl</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a2cec1ad92ba665a3b10dc48ac9792bfa" kind="function"><name>~ros_interface_impl</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1ace97934500db4bf9b5df92d941a6462f" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1a7a228336ed50226c8ad8936492ecde2c" kind="function"><name>handle_ros_topic</name></member>
+    <member refid="classgr_1_1ros__interface_1_1ros__interface__impl_1aa13933fb70175235589f3904abd0a689" kind="function"><name>handle_msg</name></member>
+  </compound>
+  <compound refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4" kind="struct"><name>ros::serialization::Serializer&lt; ::era_gazebo::ERAOccupancyGrid_&lt; ContainerAllocator &gt; &gt;</name>
+    <member refid="structros_1_1serialization_1_1Serializer_3_01_1_1era__gazebo_1_1ERAOccupancyGrid___3_01ContainerAllocator_01_4_01_4_1a694db5f5d0ef7a6bd5e189608f678ddd" kind="function"><name>allInOne</name></member>
+  </compound>
+  <compound refid="namespaceera__gazebo" kind="namespace"><name>era_gazebo</name>
+    <member refid="namespaceera__gazebo_1ab146f2c5c445d406483e46d6fd9ebd1c" kind="typedef"><name>ERAOccupancyGrid</name></member>
+    <member refid="namespaceera__gazebo_1ab8d11d06163d890232cf9b996dfe425b" kind="typedef"><name>ERAOccupancyGridPtr</name></member>
+    <member refid="namespaceera__gazebo_1a259d88a01d83e51e22c6b1e4faa4bd20" kind="typedef"><name>ERAOccupancyGridConstPtr</name></member>
+    <member refid="namespaceera__gazebo_1a8b56ed735dc317076f61cf70fa280c43" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1ros__interface" kind="namespace"><name>gr::ros_interface</name>
+  </compound>
+  <compound refid="namespaceros" kind="namespace"><name>ros</name>
+  </compound>
+  <compound refid="namespaceros_1_1message__operations" kind="namespace"><name>ros::message_operations</name>
+  </compound>
+  <compound refid="namespaceros_1_1message__traits" kind="namespace"><name>ros::message_traits</name>
+  </compound>
+  <compound refid="namespaceros_1_1serialization" kind="namespace"><name>ros::serialization</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a08d936454c61a15228be27ac39365b22" kind="define"><name>ROS_INTERFACE_API</name></member>
+  </compound>
+  <compound refid="ERAOccupancyGrid_8h" kind="file"><name>ERAOccupancyGrid.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="ros__interface_8h" kind="file"><name>ros_interface.h</name>
+  </compound>
+  <compound refid="ros__interface__impl_8h" kind="file"><name>ros_interface_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_5ecec5863d13c0214ac3f85e50b34563" kind="dir"><name>ros_interface</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

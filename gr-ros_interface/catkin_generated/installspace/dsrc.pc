@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: dsrc
-Description: Description of dsrc
-Version: 0.0.0
-Cflags: 
-Libs: -L/usr/local/lib 
-Requires: 
