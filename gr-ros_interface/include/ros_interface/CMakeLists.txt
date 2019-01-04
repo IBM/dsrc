@@ -22,5 +22,7 @@
 ########################################################################
 install(FILES
     api.h
-    ros_interface.h DESTINATION include/ros_interface
+    ros_interface.h
+    message_strobe_custom.h
+    rate_debug.h DESTINATION include/ros_interface
 )

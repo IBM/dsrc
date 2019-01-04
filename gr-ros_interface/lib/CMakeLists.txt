@@ -27,6 +27,8 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND ros_interface_sources
     ros_interface_impl.cc
+    message_strobe_custom_impl.cc
+    rate_debug_impl.cc
 )
 
 set(ros_interface_sources "${ros_interface_sources}" PARENT_SCOPE)

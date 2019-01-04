@@ -18,5 +18,7 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    ros_interface_ros_interface.xml DESTINATION share/gnuradio/grc/blocks
+    ros_interface_ros_interface.xml
+    ros_interface_message_strobe_custom.xml
+    ros_interface_rate_debug.xml DESTINATION share/gnuradio/grc/blocks
 )

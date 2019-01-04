@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<block>
+  <name>Rate Debug</name>
+  <key>ros_interface_rate_debug</key>
+  <category>ROS Interface</category>
+  <import>import ros_interface</import>
+  <make>ros_interface.rate_debug()</make>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+</block>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Message Strobe Custom
+###################################################
+ -->
+<block>
+  <name>Message Strobe Custom</name>
+  <key>ros_interface_message_strobe_custom</key>
+  <category>ROS Interface</category>
+  <import>import ros_interface</import>
+  <import>import pmt</import>
+  <make>ros_interface.message_strobe_custom($msg, $period, $msg_count)</make>
+    <callback>set_msg($msg)</callback>
+    <callback>set_period($period)</callback>
+    <callback>set_msg_count($msg_count)</callback>
+  <param>
+    <name>Message PMT</name>
+    <key>msg</key>
+    <value>pmt.intern("TEST")</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Period (ms)</name>
+    <key>period</key>
+    <value>1000</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Message Count</name>
+    <key>msg_count</key>
+    <value>1000</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>set_msg</name>
+    <type>message</type>
+        <optional>1</optional>
+  </sink>
+  <source>
+    <name>strobe</name>
+    <type>message</type>
+        <optional>1</optional>
+  </source>
+</block>

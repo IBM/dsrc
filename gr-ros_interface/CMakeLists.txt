@@ -127,7 +127,8 @@ find_package(LZ4 REQUIRED)
 # caps such as FILTER or FFT) and change the version to the minimum
 # API compatible version required.
 set(GR_REQUIRED_COMPONENTS RUNTIME)
-find_package(Gnuradio "3.7.2" REQUIRED)
+#find_package(Gnuradio "3.7.2" REQUIRED)
+find_package(Gnuradio)
 
 if(NOT CPPUNIT_FOUND)
     message(FATAL_ERROR "CppUnit required to compile ros_interface")
