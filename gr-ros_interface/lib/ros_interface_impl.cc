@@ -82,12 +82,11 @@ namespace gr {
     }
 
     void
-	ros_interface_impl::handle_ros_topic(const era_gazebo::ERAOccupancyGrid msg)
+    ros_interface_impl::handle_ros_topic(const era_gazebo::ERAOccupancyGrid msg)
     {
     	// ROS message is serialized
     	ros::SerializedMessage ser_msg = ros::serialization::serializeMessage(msg);
     	const uint32_t serial_size = ser_msg.num_bytes;
-    	//cout << msg << endl;
 
     	// Message is compressed
     	const int max_dst_size = LZ4_compressBound(serial_size);
@@ -110,22 +109,18 @@ namespace gr {
 
     	((uint32_t *)compressed_data)[0] = serial_size;
 
-    	ROS_INFO("Adding prefix: serial_size=%d", serial_size);
-
     	pmt::pmt_t pdu = pmt::cons(pmt::PMT_NIL, pmt::init_u8vector(PREFIX_SIZE+compressed_data_size, (uint8_t *)compressed_data));
-    	//pmt::pmt_t pdu = pmt::cons(pmt::PMT_NIL, pmt::init_u8vector(serial_size, (uint8_t *)serialized_payload.getData()));
     	message_port_pub(PDU_PORT_ID, pdu);
 
     	_sent_msgs += 1;
     }
 
     void
-	ros_interface_impl::handle_msg(pmt::pmt_t pdu)
+    ros_interface_impl::handle_msg(pmt::pmt_t pdu)
     {
     	const vector<uint8_t> compressed_data = pmt::u8vector_elements(pmt::cdr(pdu));
 
     	const uint32_t serial_size = ((uint32_t *)(&compressed_data[0]))[0];
-    	ROS_INFO("Extracting prefix: serial_size=%d", serial_size);
 
     	// Message is uncompressed
     	char* serialized_payload = (char *)malloc(serial_size);
