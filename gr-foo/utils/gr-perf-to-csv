@@ -63,7 +63,7 @@ class MyApp(object):
         client.setKnobs(knobs)
 
         # let the flow graph run for some time
-        time.sleep(30)
+        time.sleep(60)
 
         ## get work time for all blocks
         kl = map(lambda x: "%s::total work time" % x, blocks)
