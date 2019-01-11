@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 
+from __future__ import print_function
 short  = tuple([(52**.5/24**.5) * x for x in [0, 0, 0, 0, 0, 0, 0, 0, 1+1j, 0, 0, 0, -1-1j, 0, 0, 0, 1+1j, 0, 0, 0, -1-1j, 0, 0, 0, -1-1j, 0, 0, 0, 1+1j, 0, 0, 0, 0, 0, 0, 0, -1-1j, 0, 0, 0, -1-1j, 0, 0, 0, 1+1j, 0, 0, 0, 1+1j, 0, 0, 0, 1+1j, 0, 0, 0, 1+1j, 0, 0, 0, 0, 0, 0, 0]])
 
 long_norm = tuple([0, 0, 0, 0, 0, 0, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 0, 1, -1, -1, 1, 1, -1, 1, -1, 1, -1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0])
@@ -18,12 +19,12 @@ assert(len(long_norm) == 64)
 assert(len(long_rot)  == 64)
 assert(len(sync)      == 4)
 
-print "power short: " + str(sum([abs(x)**2 for x in short]))
-print "power long: " + str(sum([abs(x)**2 for x in long_norm]))
+print("power short: " + str(sum([abs(x)**2 for x in short])))
+print("power long: " + str(sum([abs(x)**2 for x in long_norm])))
 
-print "sync sequence"
-print sync
-print "len sync: " + str(len(sync))
+print("sync sequence")
+print(sync)
+print("len sync: " + str(len(sync)))
 
 
 

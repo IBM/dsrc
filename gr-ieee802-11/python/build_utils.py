@@ -29,7 +29,7 @@ from build_utils_codes import *
 # set srcdir to the directory that contains Makefile.am
 try:
     srcdir = os.environ['srcdir']
-except KeyError, e:
+except KeyError as e:
     srcdir = "."
 srcdir = srcdir + '/'
 
@@ -39,7 +39,7 @@ try:
         do_makefile = False
     else:
         do_makefile = True
-except KeyError, e:
+except KeyError as e:
     do_makefile = False
 
 # set do_sources to either true or false dependeing on the environment
@@ -48,7 +48,7 @@ try:
         do_sources = False
     else:
         do_sources = True
-except KeyError, e:
+except KeyError as e:
     do_sources = True
 
 name_dict = {}
@@ -105,8 +105,7 @@ def output_ifile_include (dirname):
     if do_sources:
         f = open ('%s_generated.i' % (dirname,), 'w')
         f.write ('//\n// This file is machine generated.  All edits will be overwritten\n//\n')
-        files = name_dict.setdefault ('i', [])
-        files.sort ()
+        files = sorted(name_dict.setdefault ('i', []))
         f.write ('%{\n')
         for file in files:
             f.write ('#include <%s>\n' % (file[0:-1] + 'h',))
@@ -115,8 +114,7 @@ def output_ifile_include (dirname):
             f.write ('%%include <%s>\n' % (file,))
 
 def output_subfrag (f, ext):
-    files = name_dict.setdefault (ext, [])
-    files.sort ()
+    files = sorted(name_dict.setdefault (ext, []))
     f.write ("GENERATED_%s =" % (ext.upper ()))
     for file in files:
         f.write (" \\\n\t%s" % (file,))

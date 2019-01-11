@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
 channels = [
 ### 11g
 
@@ -88,5 +89,5 @@ for i in range(0, len(channels), 3):
 	freqs.append(channels[i+1])
 
 
-print labels
-print freqs
+print(labels)
+print(freqs)
