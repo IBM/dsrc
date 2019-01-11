@@ -26,6 +26,7 @@ The file instructs SWIG to transfer the doxygen comments into the
 python docstrings.
 
 """
+from __future__ import print_function
 
 import sys
 
@@ -228,7 +229,7 @@ def make_swig_interface_file(di, swigdocfilename, custom_output=None):
 
     output = "\n\n".join(output)
 
-    swig_doc = file(swigdocfilename, 'w')
+    swig_doc = open(swigdocfilename, 'w')
     swig_doc.write(output)
     swig_doc.close()
 

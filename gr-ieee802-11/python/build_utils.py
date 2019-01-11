@@ -125,7 +125,7 @@ def extract_extension (template_name):
     # we return everything between the penultimate . and .t
     mo = re.search (r'\.([a-z]+)\.t$', template_name)
     if not mo:
-        raise ValueError, "Incorrectly formed template_name '%s'" % (template_name,)
+        raise ValueError("Incorrectly formed template_name '%s'" % (template_name,))
     return mo.group (1)
 
 def open_src (name, mode):

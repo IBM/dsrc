@@ -4,11 +4,17 @@
 # Generated Thu Jun 11 18:43:54 2009 by generateDS.py.
 #
 
+from __future__ import print_function
 import sys
 import getopt
 from string import lower as str_lower
 from xml.dom import minidom
 from xml.dom import Node
+
+try:
+    basestring     # Python 2
+except NameError:  # Python 3
+    basestring = (str, )
 
 #
 # User methods
@@ -462,7 +468,7 @@ Options:
 """
 
 def usage():
-    print USAGE_TEXT
+    print(USAGE_TEXT)
     sys.exit(1)
 
 

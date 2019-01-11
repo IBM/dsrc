@@ -24,6 +24,7 @@ A base class is created.
 Classes based upon this are used to make more user-friendly interfaces
 to the doxygen xml docs than the generated classes provide.
 """
+from __future__ import print_function
 
 import os
 import pdb
@@ -106,7 +107,7 @@ class Base(object):
             self.add_ref(converted)
             return converted
         except Exception as e:
-            print e
+            print(e)
 
     @classmethod
     def includes(cls, inst):
