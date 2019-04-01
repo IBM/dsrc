@@ -21,7 +21,7 @@
 #include <ros_interface/ros_interface.h>
 #include <gnuradio/blocks/pdu.h>
 #include "ros/ros.h"
-#include "ERAOccupancyGrid.h"   // TODO: fix this header inclusion
+#include "ERAMsg.h"   // TODO: fix this header inclusion
 
 namespace gr {
   namespace ros_interface {
@@ -45,7 +45,7 @@ namespace gr {
            gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
 
-      void handle_ros_topic(const era_gazebo::ERAOccupancyGrid msg);
+      void handle_ros_topic(const era_gazebo::ERAMsg msg);
       void handle_msg(pmt::pmt_t pdu);
     };
 
