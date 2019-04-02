@@ -25,7 +25,7 @@
 #include <gnuradio/io_signature.h>
 #include "ros_interface_impl.h"
 #include "lz4.h"
-#include "nav_msgs/OccupancyGrid.h"
+#include "ERAMsg.h"
 
 #define PREFIX_SIZE 4	// bytes
 
@@ -60,8 +60,8 @@ namespace gr {
       set_msg_handler(PDU_PORT_ID, boost::bind(&ros_interface_impl::handle_msg, this, _1));
       message_port_register_out(PDU_PORT_ID);
 
-      _loc_map_sub = _n.subscribe<era_gazebo::ERAOccupancyGrid>("local_map", 10, &ros_interface_impl::handle_ros_topic, this);
-      _rem_map_pub = _n.advertise<era_gazebo::ERAOccupancyGrid>("remote_map", 10);
+      _loc_map_sub = _n.subscribe<era_gazebo::ERAMsg>("transmit_msg", 10, &ros_interface_impl::handle_ros_topic, this);
+      _rem_map_pub = _n.advertise<era_gazebo::ERAMsg>("receive_msg", 10);
 
       _spinner.start();
     }
@@ -82,7 +82,7 @@ namespace gr {
     }
 
     void
-    ros_interface_impl::handle_ros_topic(const era_gazebo::ERAOccupancyGrid msg)
+    ros_interface_impl::handle_ros_topic(const era_gazebo::ERAMsg msg)
     {
     	// ROS message is serialized
     	ros::SerializedMessage ser_msg = ros::serialization::serializeMessage(msg);
@@ -142,7 +142,7 @@ namespace gr {
     	// Message is deserialized
     	boost::shared_array<uint8_t> buffer((uint8_t *)serialized_payload);
     	ros::SerializedMessage ser_msg(buffer, serial_size);
-    	era_gazebo::ERAOccupancyGrid msg;
+    	era_gazebo::ERAMsg msg;
     	ros::serialization::deserializeMessage(ser_msg, msg);
     	_rem_map_pub.publish(msg);
 
