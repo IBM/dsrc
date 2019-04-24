@@ -1693,7 +1693,7 @@
     </param>
     <param>
       <key>dev_addr</key>
-      <value>"serial=31530EE"</value>
+      <value></value>
     </param>
     <param>
       <key>dev_args</key>
@@ -3028,7 +3028,7 @@
     </param>
     <param>
       <key>dev_addr</key>
-      <value>"serial = 31530EE"</value>
+      <value></value>
     </param>
     <param>
       <key>dev_args</key>
