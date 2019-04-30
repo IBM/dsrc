@@ -23,6 +23,7 @@
 
 #include <ros_interface/rate_debug.h>
 #include <chrono>  // for high_resolution_clock
+#include <queue>
 
 namespace gr {
   namespace ros_interface {
@@ -33,6 +34,10 @@ namespace gr {
     	unsigned long int d_rcv_msgs;
     	unsigned long int d_rcv_bytes;
     	std::chrono::high_resolution_clock::time_point d_begin;
+
+      unsigned long int d_rcv_queue_total;
+      std::queue <unsigned long int> d_rcv_bytes_queue;
+      std::queue <std::chrono::high_resolution_clock::time_point> d_times_queue;
 
      public:
     	rate_debug_impl();

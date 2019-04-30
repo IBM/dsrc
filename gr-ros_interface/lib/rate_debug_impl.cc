@@ -74,11 +74,33 @@ namespace gr {
     	std::chrono::duration<double> elapsed = std::chrono::high_resolution_clock::now() - d_begin;
     	double rate_bps = 8 * d_rcv_bytes / elapsed.count();
 
+std::chrono::high_resolution_clock::time_point start;
+std::chrono::high_resolution_clock::time_point current = std::chrono::high_resolution_clock::now();
+unsigned int count_for_average;
+if (d_rcv_msgs > 100) {
+start = d_times_queue.front();
+d_times_queue.pop();
+d_rcv_queue_total = d_rcv_queue_total - d_rcv_bytes_queue.front() + data_len;
+d_rcv_bytes_queue.pop();
+count_for_average = 100;
+} else {
+start = d_begin;
+d_rcv_queue_total = d_rcv_bytes;
+count_for_average = d_rcv_msgs;
+}
+d_times_queue.push(current);
+d_rcv_bytes_queue.push(data_len);
+std::chrono::duration<double> elapsed_100 = current - start;
+double rate_bps_100 = 8 * d_rcv_queue_total / elapsed_100.count();
+double rate_pps_100 = count_for_average / elapsed_100.count();
 
     	std::cout << "Bytes received: " << data_len << std::endl;
     	std::cout << "Messages received: " << d_rcv_msgs << std::endl;
     	std::cout << "Elapsed seconds: " << elapsed.count() << std::endl;
     	std::cout << "Rate (bits/sec): " << rate_bps << std::endl;
+std::cout << "Rate_bps_100:    " << rate_bps_100 << std::endl;
+std::cout << "Rate_pps_100:    " << rate_pps_100 << std::endl;
+
     }
 
   } /* namespace ros_interface */
