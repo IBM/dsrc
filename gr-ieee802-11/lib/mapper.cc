@@ -67,7 +67,7 @@ int general_work(int noutput, gr_vector_int& ninput_items,
 		"   length: " << d_symbols_len << std::endl;
 
 	while(!d_symbols_offset) {
-		pmt::pmt_t msg(delete_head_nowait(pmt::intern("in")));
+  	        pmt::pmt_t msg(delete_head_blocking(pmt::intern("in"), 100));
 
 		if(!msg.get()) {
 			return 0;
