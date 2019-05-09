@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.13'?>
+<?grc format='1' created='3.7.9'?>
 <flow_graph>
   <timestamp>Fri Jul 18 10:38:08 2014</timestamp>
   <block>
@@ -73,20 +73,12 @@
       <value>True</value>
     </param>
     <param>
-      <key>sizing_mode</key>
-      <value>fixed</value>
-    </param>
-    <param>
       <key>thread_safe_setters</key>
       <value></value>
     </param>
     <param>
       <key>title</key>
       <value></value>
-    </param>
-    <param>
-      <key>placement</key>
-      <value>(0,0)</value>
     </param>
   </block>
   <block>
@@ -313,7 +305,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1096, 552)</value>
+      <value>(1104, 553)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -591,10 +583,6 @@
       <value></value>
     </param>
     <param>
-      <key>hide</key>
-      <value>none</value>
-    </param>
-    <param>
       <key>type</key>
       <value>intx</value>
     </param>
@@ -636,10 +624,6 @@
     <param>
       <key>short_id</key>
       <value></value>
-    </param>
-    <param>
-      <key>hide</key>
-      <value>none</value>
     </param>
     <param>
       <key>type</key>
@@ -744,10 +728,6 @@
       <value></value>
     </param>
     <param>
-      <key>hide</key>
-      <value>none</value>
-    </param>
-    <param>
       <key>type</key>
       <value>eng_float</value>
     </param>
@@ -808,53 +788,6 @@
     </param>
   </block>
   <block>
-    <key>ieee802_11_parse_mac</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>debug</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(256, 492)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>ieee802_11_parse_mac_0</value>
-    </param>
-    <param>
-      <key>log</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
     <key>parameter</key>
     <param>
       <key>alias</key>
@@ -887,10 +820,6 @@
     <param>
       <key>short_id</key>
       <value></value>
-    </param>
-    <param>
-      <key>hide</key>
-      <value>none</value>
     </param>
     <param>
       <key>type</key>
@@ -936,10 +865,6 @@
       <value></value>
     </param>
     <param>
-      <key>hide</key>
-      <value>none</value>
-    </param>
-    <param>
       <key>type</key>
       <value>long</value>
     </param>
@@ -981,10 +906,6 @@
     <param>
       <key>short_id</key>
       <value></value>
-    </param>
-    <param>
-      <key>hide</key>
-      <value>none</value>
     </param>
     <param>
       <key>type</key>
@@ -1062,7 +983,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1112,10 +1033,6 @@
       <value></value>
     </param>
     <param>
-      <key>hide</key>
-      <value>none</value>
-    </param>
-    <param>
       <key>type</key>
       <value>eng_float</value>
     </param>
@@ -1157,10 +1074,6 @@
     <param>
       <key>short_id</key>
       <value></value>
-    </param>
-    <param>
-      <key>hide</key>
-      <value>none</value>
     </param>
     <param>
       <key>type</key>
@@ -1206,10 +1119,6 @@
       <value></value>
     </param>
     <param>
-      <key>hide</key>
-      <value>none</value>
-    </param>
-    <param>
       <key>type</key>
       <value>intx</value>
     </param>
@@ -1251,10 +1160,6 @@
     <param>
       <key>short_id</key>
       <value></value>
-    </param>
-    <param>
-      <key>hide</key>
-      <value>none</value>
     </param>
     <param>
       <key>type</key>
@@ -2064,10 +1969,6 @@
       <value>False</value>
     </param>
     <param>
-      <key>hide_lo_controls</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>stream_args</key>
       <value></value>
     </param>
@@ -2224,18 +2125,6 @@
     <sink_block_id>ieee802_11_mac_0</sink_block_id>
     <source_key>strobe</source_key>
     <sink_key>app in</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>wifi_phy_hier_0</source_block_id>
-    <sink_block_id>ieee802_11_mac_0</sink_block_id>
-    <source_key>mac_out</source_key>
-    <sink_key>phy in</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>wifi_phy_hier_0</source_block_id>
-    <sink_block_id>ieee802_11_parse_mac_0</sink_block_id>
-    <source_key>mac_out</source_key>
-    <sink_key>in</sink_key>
   </connection>
   <connection>
     <source_block_id>wifi_phy_hier_0</source_block_id>
