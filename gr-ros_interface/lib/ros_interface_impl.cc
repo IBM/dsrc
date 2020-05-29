@@ -53,7 +53,7 @@ namespace gr {
 			  gr::io_signature::make(0, 0, 0)),
 		_sent_msgs(0),
 		_received_msgs(0),
-		_spinner(1)
+		_spinner(5)
     {
       // Create input and output message ports
       message_port_register_in(PDU_PORT_ID);
