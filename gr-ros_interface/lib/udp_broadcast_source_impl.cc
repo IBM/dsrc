@@ -89,15 +89,15 @@ void udp_broadcast_source_impl::connect(const std::string& host, int port)
         boost::asio::ip::udp::resolver resolver(d_io_service);
         boost::asio::ip::udp::resolver::query query(
             d_host, s_port, boost::asio::ip::resolver_query_base::passive);
-        //d_endpoint = *resolver.resolve(query);
-        d_endpoint = boost::asio::ip::udp::endpoint(boost::asio::ip::address_v4::any(), port);            
+        d_endpoint = *resolver.resolve(query);
+        //d_endpoint = boost::asio::ip::udp::endpoint(boost::asio::ip::address_v4::any(), port);            
 
         d_socket = new boost::asio::ip::udp::socket(d_io_service);
         d_socket->open(d_endpoint.protocol());
 
         boost::asio::socket_base::reuse_address roption(true);
         d_socket->set_option(roption);
-
+        d_socket->set_option(boost::asio::ip::multicast::join_group(boost::asio::ip::address::from_string(host)));
         d_socket->bind(d_endpoint);
 
         start_receive();

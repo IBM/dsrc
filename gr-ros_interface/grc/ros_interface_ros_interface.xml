@@ -4,8 +4,12 @@
   <key>ros_interface_ros_interface</key>
   <category>ROS Interface</category>
   <import>import ros_interface</import>
-  <make>ros_interface.ros_interface()</make>
-
+  <make>ros_interface.ros_interface($robot_name)</make>
+  <param>
+    <name>Robot Name</name>
+    <key>robot_name</key>
+    <type>string</type>
+  </param>
   <sink>
     <name>pdus</name>
     <type>message</type>

@@ -36,7 +36,7 @@ namespace gr {
   namespace ros_interface {
 
     ros_interface::sptr
-    ros_interface::make()
+    ros_interface::make(const std::string& robot_name)
     {
       // Create and initialize ROS node
       int argc = 0;
@@ -44,16 +44,17 @@ namespace gr {
       ros::init(argc, argv, "ros_interface");
 
       return gnuradio::get_initial_sptr
-        (new ros_interface_impl());
+        (new ros_interface_impl(robot_name));
     }
 
-    ros_interface_impl::ros_interface_impl()
+    ros_interface_impl::ros_interface_impl(const std::string& robot_name)
       : gr::block("ros_interface",
     		  gr::io_signature::make(0, 0, 0),
 			  gr::io_signature::make(0, 0, 0)),
+      ID(robot_name),
 		_sent_msgs(0),
 		_received_msgs(0),
-		_spinner(5)
+		_spinner(3)
     {
       // Create input and output message ports
       message_port_register_in(PDU_PORT_ID);
@@ -121,6 +122,8 @@ namespace gr {
     	const vector<uint8_t> compressed_data = pmt::u8vector_elements(pmt::cdr(pdu));
 
     	const uint32_t serial_size = ((uint32_t *)(&compressed_data[0]))[0];
+
+      ROS_INFO("DECOMPRESS HANDLE");
 
     	// Message is uncompressed
     	char* serialized_payload = (char *)malloc(serial_size);

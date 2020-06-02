@@ -35,9 +35,10 @@ namespace gr {
        ros::Subscriber _loc_map_sub;
        ros::Publisher _rem_map_pub;
        ros::AsyncSpinner _spinner;
+       std::string ID;
 
      public:
-      ros_interface_impl();
+      ros_interface_impl(const std::string& robot_name);
       ~ros_interface_impl();
 
       int general_work(int noutput_items,

@@ -42,7 +42,7 @@ namespace gr {
        * class. ros_interface::ros_interface::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(const std::string& robot_name);
     };
 
   } // namespace ros_interface
