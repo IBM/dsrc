@@ -5,11 +5,11 @@
 ###################################################
  -->
 <block>
-	<name>UDP Broadcast Source</name>
-	<key>ros_interface_udp_source</key>
+	<name>UDP Multicast Source</name>
+	<key>ros_interface_udp_multicast_source</key>
 	<flags>throttle</flags>
 	<import>import ros_interface</import>
-	<make>ros_interface.udp_broadcast_source($type.size*$vlen, $ipaddr, $port, $psize, $eof)</make>
+	<make>ros_interface.udp_multicast_source($type.size*$vlen, $ipaddr, $port, $psize, $eof)</make>
 	<param>
 		<name>Output Type</name>
 		<key>type</key>

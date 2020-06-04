@@ -24,7 +24,7 @@
 #include "config.h"
 #endif
 
-#include "udp_broadcast_source_impl.h"
+#include "udp_multicast_source_impl.h"
 #include <gnuradio/io_signature.h>
 #include <gnuradio/math.h>
 #include <gnuradio/prefs.h>
@@ -36,20 +36,20 @@
 namespace gr {
 namespace ros_interface {
 
-const int udp_broadcast_source_impl::BUF_SIZE_PAYLOADS =
+const int udp_multicast_source_impl::BUF_SIZE_PAYLOADS =
     gr::prefs::singleton()->get_long("udp_blocks", "buf_size_payloads", 50);
 
-udp_broadcast_source::sptr udp_broadcast_source::make(
+udp_multicast_source::sptr udp_multicast_source::make(
     size_t itemsize, const std::string& ipaddr, int port, int payload_size, bool eof)
 {
     return gnuradio::get_initial_sptr(
-        new udp_broadcast_source_impl(itemsize, ipaddr, port, payload_size, eof));
+        new udp_multicast_source_impl(itemsize, ipaddr, port, payload_size, eof));
 }
 
-udp_broadcast_source_impl::udp_broadcast_source_impl(
+udp_multicast_source_impl::udp_multicast_source_impl(
     size_t itemsize, const std::string& host, int port, int payload_size, bool eof)
     : sync_block(
-          "udp_broadcast_source", io_signature::make(0, 0, 0), io_signature::make(1, 1, itemsize)),
+          "udp_multicast_source", io_signature::make(0, 0, 0), io_signature::make(1, 1, itemsize)),
       d_itemsize(itemsize),
       d_payload_size(payload_size),
       d_eof(eof),
@@ -65,7 +65,7 @@ udp_broadcast_source_impl::udp_broadcast_source_impl(
     connect(host, port);
 }
 
-udp_broadcast_source_impl::~udp_broadcast_source_impl()
+udp_multicast_source_impl::~udp_multicast_source_impl()
 {
     if (d_connected)
         disconnect();
@@ -74,7 +74,7 @@ udp_broadcast_source_impl::~udp_broadcast_source_impl()
     delete[] d_residbuf;
 }
 
-void udp_broadcast_source_impl::connect(const std::string& host, int port)
+void udp_multicast_source_impl::connect(const std::string& host, int port)
 {
     if (d_connected)
         disconnect();
@@ -102,12 +102,12 @@ void udp_broadcast_source_impl::connect(const std::string& host, int port)
 
         start_receive();
         d_udp_thread =
-            gr::thread::thread(boost::bind(&udp_broadcast_source_impl::run_io_service, this));
+            gr::thread::thread(boost::bind(&udp_multicast_source_impl::run_io_service, this));
         d_connected = true;
     }
 }
 
-void udp_broadcast_source_impl::disconnect()
+void udp_multicast_source_impl::disconnect()
 {
     gr::thread::scoped_lock lock(d_setlock);
 
@@ -125,24 +125,24 @@ void udp_broadcast_source_impl::disconnect()
 }
 
 // Return port number of d_socket
-int udp_broadcast_source_impl::get_port(void)
+int udp_multicast_source_impl::get_port(void)
 {
     // return d_endpoint.port();
     return d_socket->local_endpoint().port();
 }
 
-void udp_broadcast_source_impl::start_receive()
+void udp_multicast_source_impl::start_receive()
 {
     d_socket->async_receive_from(
         boost::asio::buffer((void*)d_rxbuf, d_payload_size),
         d_endpoint_rcvd,
-        boost::bind(&udp_broadcast_source_impl::handle_read,
+        boost::bind(&udp_multicast_source_impl::handle_read,
                     this,
                     boost::asio::placeholders::error,
                     boost::asio::placeholders::bytes_transferred));
 }
 
-void udp_broadcast_source_impl::handle_read(const boost::system::error_code& error,
+void udp_multicast_source_impl::handle_read(const boost::system::error_code& error,
                                   size_t bytes_transferred)
 {
     if (!error) {
@@ -174,7 +174,7 @@ void udp_broadcast_source_impl::handle_read(const boost::system::error_code& err
     start_receive();
 }
 
-int udp_broadcast_source_impl::work(int noutput_items,
+int udp_multicast_source_impl::work(int noutput_items,
                           gr_vector_const_void_star& input_items,
                           gr_vector_void_star& output_items)
 {

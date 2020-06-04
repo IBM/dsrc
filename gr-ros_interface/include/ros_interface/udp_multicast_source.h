@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2007-2010,2013 Free Software Foundation, Inc.
+ * Copyright 2007-2010,2013,2015 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -20,8 +20,8 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_GR_UDP_BROADCAST_SINK_H
-#define INCLUDED_GR_UDP_BROADCAST_SINK_H
+#ifndef INCLUDED_GR_UDP_MULTICAST_SOURCE_H
+#define INCLUDED_GR_UDP_MULTICAST_SOURCE_H
 
 #include <ros_interface/api.h>
 #include <gnuradio/sync_block.h>
@@ -30,34 +30,33 @@ namespace gr {
 namespace ros_interface {
 
 /*!
- * \brief Write stream to an UDP socket.
+ * \brief Read stream from an UDP socket.
  * \ingroup networking_tools_blk
  */
-class ROS_INTERFACE_API udp_broadcast_sink : virtual public sync_block
+class ROS_INTERFACE_API udp_multicast_source : virtual public sync_block
 {
 public:
-    // gr::blocks::udp_broadcast_sink::sptr
-    typedef boost::shared_ptr<udp_broadcast_sink> sptr;
+    // gr::blocks::udp_multicast_source::sptr
+    typedef boost::shared_ptr<udp_multicast_source> sptr;
 
     /*!
-     * \brief UDP Sink Constructor
+     * \brief UDP Source Constructor
      *
      * \param itemsize     The size (in bytes) of the item datatype
-     * \param host         The name or IP address of the receiving host; use
-     *                     NULL or None for no connection
-     * \param port         Destination port to connect to on receiving host
-     * \param payload_size UDP payload size by default set to
-     *                     1472 = (1500 MTU - (8 byte UDP header) - (20 byte IP header))
-     * \param eof          Send zero-length packet on disconnect
+     * \param host         The name or IP address of the transmitting host; can be
+     *                     NULL, None, or "0.0.0.0" to allow reading from any
+     *                     interface on the host
+     * \param port         The port number on which to receive data; use 0 to
+     *                     have the system assign an unused port number
+     * \param payload_size UDP payload size by default set to 1472 =
+     *                     (1500 MTU - (8 byte UDP header) - (20 byte IP header))
+     * \param eof          Interpret zero-length packet as EOF (default: true)
      */
     static sptr make(size_t itemsize,
                      const std::string& host,
                      int port,
                      int payload_size = 1472,
                      bool eof = true);
-
-    /*! \brief return the PAYLOAD_SIZE of the socket */
-    virtual int payload_size() = 0;
 
     /*! \brief Change the connection to a new destination
      *
@@ -69,15 +68,18 @@ public:
      */
     virtual void connect(const std::string& host, int port) = 0;
 
-    /*! \brief Send zero-length packet (if eof is requested) then stop sending
-     *
-     * Zero-byte packets can be interpreted as EOF by gr_udp_source.
-     * Note that disconnect occurs automatically when the sink is
-     * destroyed, but not when its top_block stops.*/
+    /*! \brief Cut the connection if we have one set up.
+     */
     virtual void disconnect() = 0;
+
+    /*! \brief return the PAYLOAD_SIZE of the socket */
+    virtual int payload_size() = 0;
+
+    /*! \brief return the port number of the socket */
+    virtual int get_port() = 0;
 };
 
 } /* namespace blocks */
 } /* namespace gr */
 
-#endif /* INCLUDED_GR_UDP_BROADCAST_SINK_H */
+#endif /* INCLUDED_GR_UDP_multicast_SOURCE_H */

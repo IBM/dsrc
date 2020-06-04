@@ -11,8 +11,7 @@
 #include "ros_interface/ros_interface.h"
 #include "ros_interface/message_strobe_custom.h"
 #include "ros_interface/rate_debug.h"
-#include "ros_interface/udp_broadcast_sink.h"
-#include "ros_interface/udp_broadcast_source.h"
+#include "ros_interface/udp_multicast_source.h"
 %}
 
 
@@ -22,7 +21,5 @@ GR_SWIG_BLOCK_MAGIC2(ros_interface, ros_interface);
 GR_SWIG_BLOCK_MAGIC2(ros_interface, message_strobe_custom);
 %include "ros_interface/rate_debug.h"
 GR_SWIG_BLOCK_MAGIC2(ros_interface, rate_debug);
-%include "ros_interface/udp_broadcast_sink.h"
-GR_SWIG_BLOCK_MAGIC2(ros_interface, udp_broadcast_sink);
-%include "ros_interface/udp_broadcast_source.h"
-GR_SWIG_BLOCK_MAGIC2(ros_interface, udp_broadcast_source);
+%include "ros_interface/udp_multicast_source.h"
+GR_SWIG_BLOCK_MAGIC2(ros_interface, udp_multicast_source);

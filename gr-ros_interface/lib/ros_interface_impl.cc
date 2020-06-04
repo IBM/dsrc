@@ -61,7 +61,7 @@ namespace gr {
       set_msg_handler(PDU_PORT_ID, boost::bind(&ros_interface_impl::handle_msg, this, _1));
       message_port_register_out(PDU_PORT_ID);
 
-      _loc_map_sub = _n.subscribe<era_gazebo::ERAMsg>("transmit_msg", 10, &ros_interface_impl::handle_ros_topic, this);
+      _loc_map_sub = _n.subscribe<era_gazebo::ERAMsg>("transmit_msg", 2, &ros_interface_impl::handle_ros_topic, this);
       _rem_map_pub = _n.advertise<era_gazebo::ERAMsg>("receive_msg", 10);
 
       _spinner.start();

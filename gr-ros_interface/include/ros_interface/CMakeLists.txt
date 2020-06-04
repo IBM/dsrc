@@ -25,7 +25,6 @@ install(FILES
     ros_interface.h
     message_strobe_custom.h
     rate_debug.h 
-    udp_broadcast_sink.h 
-    udp_broadcast_source.h 
+    udp_multicast_source.h 
     DESTINATION include/ros_interface
 )

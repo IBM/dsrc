@@ -21,7 +21,6 @@ install(FILES
     ros_interface_ros_interface.xml
     ros_interface_message_strobe_custom.xml
     ros_interface_rate_debug.xml 
-    ros_interface_udp_broadcast_sink.xml
-    ros_interface_udp_broadcast_source.xml
+    ros_interface_udp_multicast_source.xml
     DESTINATION share/gnuradio/grc/blocks
 )

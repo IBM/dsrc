@@ -250,11 +250,11 @@
     </param>
     <param>
       <key>ipaddr</key>
-      <value>remote_ip</value>
+      <value>multicast_ip</value>
     </param>
     <param>
       <key>port</key>
-      <value>remote_port</value>
+      <value>multicast_port</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -728,7 +728,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(816, 109)</value>
+      <value>(960, 109)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -736,7 +736,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>local_ip</value>
+      <value>multicast_ip</value>
     </param>
     <param>
       <key>label</key>
@@ -779,7 +779,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>local_port</value>
+      <value>multicast_port</value>
     </param>
     <param>
       <key>label</key>
@@ -1181,92 +1181,6 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(960, 109)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>remote_ip</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value></value>
-    </param>
-    <param>
-      <key>short_id</key>
-      <value></value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>string</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>127.0.0.1</value>
-    </param>
-  </block>
-  <block>
-    <key>parameter</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(640, 12)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>remote_port</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value></value>
-    </param>
-    <param>
-      <key>short_id</key>
-      <value></value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>intx</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>52002</value>
-    </param>
-  </block>
-  <block>
-    <key>parameter</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
       <value>(344, 12)</value>
     </param>
     <param>
@@ -1338,7 +1252,7 @@
     </param>
   </block>
   <block>
-    <key>ros_interface_udp_source</key>
+    <key>ros_interface_udp_multicast_source</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1357,7 +1271,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(832, 614)</value>
+      <value>(780, 646)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1365,11 +1279,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>ros_interface_udp_source_0</value>
+      <value>ros_interface_udp_multicast_source_0</value>
     </param>
     <param>
       <key>ipaddr</key>
-      <value>local_ip</value>
+      <value>multicast_ip</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1393,7 +1307,7 @@
     </param>
     <param>
       <key>port</key>
-      <value>local_port</value>
+      <value>multicast_port</value>
     </param>
     <param>
       <key>vlen</key>
@@ -3811,7 +3725,7 @@
     <sink_key>app in</sink_key>
   </connection>
   <connection>
-    <source_block_id>ros_interface_udp_source_0</source_block_id>
+    <source_block_id>ros_interface_udp_multicast_source_0</source_block_id>
     <sink_block_id>wifi_phy_hier_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>

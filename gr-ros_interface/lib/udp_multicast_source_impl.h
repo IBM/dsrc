@@ -20,10 +20,10 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_GR_UDP_BROADCAST_SOURCE_IMPL_H
-#define INCLUDED_GR_UDP_BROADCAST_SOURCE_IMPL_H
+#ifndef INCLUDED_GR_UDP_MULTICAST_SOURCE_IMPL_H
+#define INCLUDED_GR_UDP_MULTICAST_SOURCE_IMPL_H
 
-#include <ros_interface/udp_broadcast_source.h>
+#include <ros_interface/udp_multicast_source.h>
 #include <gnuradio/thread/thread.h>
 #include <boost/asio.hpp>
 #include <boost/format.hpp>
@@ -31,7 +31,7 @@
 namespace gr {
 namespace ros_interface {
 
-class udp_broadcast_source_impl : public udp_broadcast_source
+class udp_multicast_source_impl : public udp_multicast_source
 {
 private:
     size_t d_itemsize;
@@ -64,9 +64,9 @@ private:
     void run_io_service() { d_io_service.run(); }
 
 public:
-    udp_broadcast_source_impl(
+    udp_multicast_source_impl(
         size_t itemsize, const std::string& host, int port, int payload_size, bool eof);
-    ~udp_broadcast_source_impl();
+    ~udp_multicast_source_impl();
 
     void connect(const std::string& host, int port);
     void disconnect();
@@ -82,4 +82,4 @@ public:
 } /* namespace blocks */
 } /* namespace gr */
 
-#endif /* INCLUDED_GR_UDP_BROADCAST_SOURCE_H */
+#endif /* INCLUDED_GR_UDP_multicast_SOURCE_H */

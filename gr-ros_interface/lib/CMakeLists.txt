@@ -29,8 +29,7 @@ list(APPEND ros_interface_sources
     ros_interface_impl.cc
     message_strobe_custom_impl.cc
     rate_debug_impl.cc
-    udp_broadcast_sink_impl.cc
-    udp_broadcast_source_impl.cc
+    udp_multicast_source_impl.cc
 )
 
 set(ros_interface_sources "${ros_interface_sources}" PARENT_SCOPE)
