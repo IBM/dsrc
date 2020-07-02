@@ -28,7 +28,7 @@ namespace gr {
   private:
     boost::shared_ptr<gr::thread::thread> d_thread;
     bool d_finished;
-    float d_period_ms;
+    long int d_period_ms;
     pmt::pmt_t d_msg;
     unsigned long int d_msg_count;
     unsigned long int d_sent_msgs;
@@ -36,12 +36,12 @@ namespace gr {
     void run();
 
   public:
-    message_strobe_custom_impl(pmt::pmt_t msg, float period_ms, unsigned long int msg_count);
+    message_strobe_custom_impl(pmt::pmt_t msg, long int period_ms, unsigned long int msg_count);
     ~message_strobe_custom_impl();
 
     void set_msg(pmt::pmt_t msg) { d_msg = msg; }
     pmt::pmt_t msg() const { return d_msg; }
-    void set_period(float period_ms) { d_period_ms = period_ms; }
+    void set_period(long int period_ms) { d_period_ms = period_ms; }
     float period() const { return d_period_ms; }
     void set_msg_count(unsigned long int msg_count) { d_msg_count = msg_count; }
     float msg_count() const { return d_msg_count; }

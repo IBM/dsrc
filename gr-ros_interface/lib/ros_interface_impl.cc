@@ -105,7 +105,7 @@ namespace gr {
           free(compressed_data);
           return;
     	}
-    	ROS_INFO("Compressing %d bytes into %d bytes", serial_size, compressed_data_size);
+    	ROS_DEBUG("Compressing %d bytes into %d bytes", serial_size, compressed_data_size);
 
     	((uint32_t *)compressed_data)[0] = serial_size;
 
@@ -137,7 +137,7 @@ namespace gr {
           return;
     	}
     	// decompressed_size should be equal to serial_size
-    	ROS_INFO("Uncompressing %lu bytes into %d bytes", compressed_data.size()-PREFIX_SIZE, decompressed_size);
+    	ROS_DEBUG("Uncompressing %lu bytes into %d bytes", compressed_data.size()-PREFIX_SIZE, decompressed_size);
 
     	// Message is deserialized
     	boost::shared_array<uint8_t> buffer((uint8_t *)serialized_payload);

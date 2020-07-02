@@ -52,7 +52,7 @@ namespace gr {
      *                  send \p msg.
      * \param msg_count the number of messages to send.
      */
-    static sptr make(pmt::pmt_t msg, float period_ms, unsigned long int msg_count);
+    static sptr make(pmt::pmt_t msg, long int period_ms, unsigned long int msg_count);
 
     /*!
      * Reset the message being sent.
@@ -69,7 +69,7 @@ namespace gr {
      * Reset the sending interval.
      * \param period_ms the time period in milliseconds.
      */
-    virtual void set_period(float period_ms) = 0;
+    virtual void set_period(long int period_ms) = 0;
 
     /*!
      * Get the time interval of the strobe.

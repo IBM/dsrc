@@ -27,13 +27,13 @@ namespace gr {
   namespace ros_interface {
 
   message_strobe_custom::sptr
-  message_strobe_custom::make(pmt::pmt_t msg, float period_ms, unsigned long int msg_count)
+  message_strobe_custom::make(pmt::pmt_t msg, long int period_ms, unsigned long int msg_count)
   {
     return gnuradio::get_initial_sptr
       (new message_strobe_custom_impl(msg, period_ms, msg_count));
   }
 
-  message_strobe_custom_impl::message_strobe_custom_impl(pmt::pmt_t msg, float period_ms, unsigned long int msg_count)
+  message_strobe_custom_impl::message_strobe_custom_impl(pmt::pmt_t msg, long int period_ms, unsigned long int msg_count)
     : block("message_strobe_custom",
             io_signature::make(0, 0, 0),
             io_signature::make(0, 0, 0)),
